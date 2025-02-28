@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HairMainStreet</title>
+        <link rel="stylesheet" href="base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="/">
+                    <img src="assets/HMS main.png" alt>
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleModal()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <span class="cancel-icon hidden">&times;</span>
+            </div>
+
+            <div id="nav-modal" class="modal hidden">
+                <div class="modal-content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#about-us" onclick="turnOffModal()">About</a></li>
+                        <li><a href="#features-section" onclick="turnOffModal()">Features</a></li>
+                        <li><a href="#faq" onclick="turnOffModal()">FAQs</a></li>
+                        <li><a href="#download" onclick="turnOffModal()">Download Here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#features-section">Features</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <a href="#download" class="download-link">Download Here</a>
+                </ul>
+            </nav>
+        </header>
+        <script src="index.js"></script>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Stunning hair, Simple payments - <span>Start Shopping, Pay
+                        in
+                        Installments!</span></h1>
+                <p>Shop for the latest hair styles and accessories with ease.
+                    Our
+                    app
+                    lets you buy top-quality hair products and pay in easy
+                    installments or at once. Connect with trusted vendors for
+                    the best
+                    advice
+                    and service. Get the hair you want today, without the stress
+                    of
+                    upfront costs. Start shopping now!</p>
+                <button>Download Now</button>
+            </div>
+            <div class="hero-image-placeholder"><img src="assets/Frame 550.png"
+                    alt></div>
+        </section>
+
+        <section class="why-us">
+            <div class="why-us-content">
+                <div class="image-placeholder"><img src="assets/Frame 552.png"
+                        alt></div>
+                <div class="text">
+                    <h2>Why Choose Us?</h2>
+                    <p>Our app offers flexible payment options, allowing you to
+                        purchase your dream wigs and hair products with ease.
+                        Experience the perfect blend of affordability and
+                        quality. Get the hair you want now, making luxury hair
+                        accessible and achievable for everyone.</p>
+                    <button>Download Now</button>
+                    <!-- <ul>
+                        <li>Flexible Payment Options</li>
+                        <li>Vendor Empowerment</li>
+                        <li>Seamless Shopping Experience</li>
+                    </ul> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features-section">
+            <div class="features-image-placeholder"><img
+                    src="assets/Frame 546.png" alt></div>
+            <div class="features">
+                <h2>Features</h2>
+                <div class="features-content">
+                    <div class="feature-item">
+                        <h3>Flexible Payment Options</h3>
+                        <p>Purchase your dream wigs and hair products with
+                            convenient installment plans, making luxury
+                            affordable
+                            for everyone.</p>
+                    </div>
+                    <hr>
+                    <div class="feature-item">
+                        <h3>Vendor Empowerment</h3>
+                        <p>Join our platform as a vendor and access tools to
+                            grow
+                            your business, reach a wider audience, and boost
+                            your
+                            sales effortlessly.</p>
+                    </div>
+                    <hr>
+                    <div class="feature-item">
+                        <h3>Seamless Shopping Experience</h3>
+                        <p>Enjoy an intuitive and friendly interface that makes
+                            browsing, selecting, and purchasing hair products a
+                            breeze.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <div class="about-us">
+                <div class="about-us-div">
+                    <h2>About Us</h2>
+                    <div class="about-us-div1">
+                        <div class="about-us-item">
+                            <h3>Vision</h3>
+                            <div>
+                                <p>To revolutionize the hair industry by
+                                    empowering
+                                    every
+                                    individual to achieve their dream look
+                                    effortlessly,
+                                    while fostering a thriving community of
+                                    vendors
+                                    and
+                                    buyers through innovation and
+                                    flexibility.</p>
+                            </div>
+                        </div>
+                        <div class="about-us-item">
+                            <h3>Mission</h3>
+                            <div>
+                                <p>Our mission is to provide a seamless and
+                                    inclusive
+                                    shopping experience that allows users to
+                                    purchase
+                                    their
+                                    dream wigs with flexible payment options,
+                                    become
+                                    successful vendors, and enjoy an
+                                    unparalleled
+                                    journey
+                                    towards personal and professional growth in
+                                    the
+                                    hair
+                                    industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <h2>F.A.Q's</h2>
+            <div class="faq-item">
+                <h3>How long does delivery take for goods being paid for in
+                    installment?</h3>
+                <p>Your item will be shipped once you've paid half of the total
+                    cost in equal installments and meet all our delivery
+                    conditions. This typically occurs around the midpoint of
+                    your installment plan.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I request for a refund if I’m not interested in an item
+                    I am paying for in installments?</h3>
+                <p>Yes, however, please note that a 10% fee of the installment
+                    amount paid so far will be applied to discourage unnecessary
+                    cancellations.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How much does Hair Main Street charge?</h3>
+                <p>There are no hidden fees, no service charges, and you get
+                    very good value for money.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if the product I want to buy is no more available in
+                    the market when I have reached my half payment mark?</h3>
+                <p>In the rare event that your item of choice is sold out or
+                    unavailable, we would offer you an option to pick a similar
+                    item within the same price range or grant you a refund.</p>
+            </div>
+        </section>
+
+        <section class="download" id="download">
+            <h2>Download <span>Hair Main Street</span> to own your dream hair
+                and enjoy
+                seamless & convenient shopping</h2>
+            <div class="download-buttons">
+                <button>Download on App Store</button>
+                <button>Download on Google Play</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <div class="company">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="business">
+                    <h3>BUSINESS</h3>
+                    <ul>
+                        <li><a href="#app">Get the app</a></li>
+                        <li><a href="#help">Help & F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h3>SOCIALS</h3>
+                    <ul>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <p>Get in touch: hello@Hairmainstreet.co</p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
