@@ -13,7 +13,7 @@ header {
   padding-right: 4rem;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
-  background-color: #fff;
+  background-color: #f0ecf9;
 }
 
 header .logo {
@@ -290,7 +290,7 @@ header .download-link {
   padding: 0.8rem;
   background-color: #fff;
   border: 1px solid #333;
-  height: 12.5rem; /* 200px */
+  height: fit-content;
 }
 
 .about-us-item p {
@@ -364,27 +364,53 @@ header .download-link {
 
 .download-buttons {
   display: flex;
-  gap: 2rem;
-  padding-right: 8rem;
-  padding-left: 8rem;
-  padding-top: -0.5rem;
+  gap: 1.1rem;
+  justify-content: center;
+}
+
+.download-buttons svg {
+  width: 45px;
+  height: 45px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.download-on {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Raleway';
+}
+
+.store {
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .download-buttons button {
-  flex: 2;
-  background-color: #9575cd;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
+  background-color: #f0ecf9;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-width: 1px;
+  border-color: #333;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   border-radius: 0.9375rem; /* 15px */
-  margin-top: 1.875rem; /* 30px */
-  height: 4.4375rem; /* 71px */
-  width: 60%;
+  /* margin-top: 1.875rem; 30px */
+  /* height: 4.4375rem; 71px */
+  /* width: 60%; */
   font-family: 'Lato', 'San-serif';
   font-weight: 700;
   font-size: 1.5625rem; /* 25px */
   line-height: 2.08125rem; /* 33.3px */
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
@@ -402,7 +428,7 @@ footer h3 {
 
 footer .footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   margin-bottom: 1rem;
 }
 
@@ -412,6 +438,8 @@ footer .footer-links div {
 
 footer .footer-links ul {
   list-style: none;
+  justify-content: start;
+  align-items: start;
   padding: 0;
 }
 
@@ -423,6 +451,7 @@ footer .footer-links ul li {
 footer .footer-links ul li a {
   color: #fff;
   text-decoration: none;
+  justify-content: start;
   text-align: left;
   font-size: 1.25rem; /* 20px */
   font-family: 'Raleway', 'San-serif';
@@ -441,12 +470,37 @@ footer .contact {
 /* Tablet and Mobile Views */
 @media (max-width: 1024px) {
   header {
-    flex-direction: column;
-    padding: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    align-items: start;
   }
 
-  header nav ul {
-    flex-direction: column;
+  header .logo {
+    height: fit-content;
+    padding-left: 2.45rem;
+  }
+
+  header nav {
+    padding-top: 20%;
+    width: fit-content;
+  }
+
+  header nav,
+  ul {
+    justify-content: start;
+    flex-direction: row;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.3rem;
+  }
+
+  header nav ul li {
+    padding: 0;
+    width: auto;
+    font-size: small;
   }
 
   .hero {
@@ -458,6 +512,10 @@ footer .contact {
   .hero-image-placeholder {
     width: 100%;
     height: auto;
+  }
+
+  .about-us div {
+    height: fit-content;
   }
 
   .why-us-content {
@@ -479,6 +537,10 @@ footer .contact {
 
   .download-buttons {
     flex-direction: column;
+  }
+
+  .download h2 {
+    font-size: 55px;
   }
 }
 
@@ -551,8 +613,8 @@ footer .contact {
 
   .download-buttons button {
     width: 100%;
-    font-size: 1rem;
-    height: fit-content;
+    font-size: 16px;
+    /* height: fit-content; */
   }
 
   footer {
@@ -714,14 +776,14 @@ footer .contact {
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
-  .modal-content ul li{
+  .modal-content ul li {
     text-align: center;
     margin-top: 3rem;
     list-style: none;
   }
 
   .modal-content ul li a {
-    font-family: "Raleway","San-serif";
+    font-family: 'Raleway', 'San-serif';
     font-weight: 400;
     font-size: 1.563rem;
     color: #fff;
@@ -739,5 +801,9 @@ footer .contact {
     font-size: 3.125rem; /* Adjust size as needed */
     display: none;
     color: #fff;
+  }
+
+  .store {
+    font-size: 20px;
   }
 }
