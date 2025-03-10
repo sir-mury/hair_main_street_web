@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>HairMainStreet</title>
+
+        <link rel="icon" type="image/x-icon"
+            href="fav_icon/HMS main.ico">
+
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo"><a href="/public/">
+                    <img src="assets/HMS main.png" alt>
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleModal()">
+                <div></div>
+                <div></div>
+                <div></div>
+                <span class="cancel-icon hidden">&times;</span>
+            </div>
+
+            <div id="nav-modal" class="modal hidden">
+                <div class="modal-content">
+                    <ul>
+                        <li><a href="#about-us"
+                                onclick="turnOffModal()">About</a></li>
+                        <li><a href="#features-section"
+                                onclick="turnOffModal()">Features</a></li>
+                        <li><a href="#faq"
+                                onclick="turnOffModal()">FAQs</a></li>
+                        <li><a href="#download"
+                                onclick="turnOffModal()">Download Here</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#features-section">Features</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <a href="#download" class="download-link">Download Here</a>
+                </ul>
+            </nav>
+        </header>
+        <script src="index.js"></script>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Stunning hair, Simple payments - <span>Start Shopping, Pay
+                        in
+                        Installments!</span></h1>
+                <p>Shop for the latest hair styles and accessories with ease.
+                    Our
+                    app
+                    lets you buy top-quality hair products and pay in easy
+                    installments or at once. Connect with trusted vendors for
+                    the best
+                    advice
+                    and service. Get the hair you want today, without the stress
+                    of
+                    upfront costs. Start shopping now!</p>
+            </div>
+            <div class="hero-image-placeholder"><img src="assets/Frame 550.png"
+                    alt></div>
+        </section>
+
+        <section class="why-us">
+            <div class="why-us-content">
+                <div class="image-placeholder"><img src="assets/Frame 552.png"
+                        alt></div>
+                <div class="text">
+                    <h2>Why Choose Us?</h2>
+                    <p>Our app offers flexible payment options, allowing you to
+                        purchase your dream wigs and hair products with ease.
+                        Experience the perfect blend of affordability and
+                        quality. Get the hair you want now, making luxury hair
+                        accessible and achievable for everyone.</p>
+                    <!-- <ul>
+                        <li>Flexible Payment Options</li>
+                        <li>Vendor Empowerment</li>
+                        <li>Seamless Shopping Experience</li>
+                    </ul> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features-section">
+            <div class="features-image-placeholder"><img
+                    src="assets/Frame 546.png" alt></div>
+            <div class="features">
+                <h2>Features</h2>
+                <div class="features-content">
+                    <div class="feature-item">
+                        <h3>Flexible Payment Options</h3>
+                        <p>Purchase your dream wigs and hair products with
+                            convenient installment plans, making luxury
+                            affordable
+                            for everyone.</p>
+                    </div>
+                    <hr>
+                    <div class="feature-item">
+                        <h3>Vendor Empowerment</h3>
+                        <p>Join our platform as a vendor and access tools to
+                            grow
+                            your business, reach a wider audience, and boost
+                            your
+                            sales effortlessly.</p>
+                    </div>
+                    <hr>
+                    <div class="feature-item">
+                        <h3>Seamless Shopping Experience</h3>
+                        <p>Enjoy an intuitive and friendly interface that makes
+                            browsing, selecting, and purchasing hair products a
+                            breeze.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <div class="about-us">
+                <div class="about-us-div">
+                    <h2>About Us</h2>
+                    <div class="about-us-div1">
+                        <div class="about-us-item">
+                            <h3>Vision</h3>
+                            <div>
+                                <p>To revolutionize the hair industry by
+                                    empowering
+                                    every
+                                    individual to achieve their dream look
+                                    effortlessly,
+                                    while fostering a thriving community of
+                                    vendors
+                                    and
+                                    buyers through innovation and
+                                    flexibility.</p>
+                            </div>
+                        </div>
+                        <div class="about-us-item">
+                            <h3>Mission</h3>
+                            <div>
+                                <p>Our mission is to provide a seamless and
+                                    inclusive
+                                    shopping experience that allows users to
+                                    purchase
+                                    their
+                                    dream wigs with flexible payment options,
+                                    become
+                                    successful vendors, and enjoy an
+                                    unparalleled
+                                    journey
+                                    towards personal and professional growth in
+                                    the
+                                    hair
+                                    industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <h2>F.A.Q's</h2>
+            <div class="faq-item">
+                <h3>How long does delivery take for goods being paid for in
+                    installment?</h3>
+                <p>Your item will be shipped once you've paid half of the total
+                    cost in equal installments and meet all our delivery
+                    conditions. This typically occurs around the midpoint of
+                    your installment plan.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I request for a refund if I’m not interested in an item
+                    I am paying for in installments?</h3>
+                <p>Yes, however, please note that a 10% fee of the installment
+                    amount paid so far will be applied to discourage unnecessary
+                    cancellations.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How much does Hair Main Street charge?</h3>
+                <p>There are no hidden fees, no service charges, and you get
+                    very good value for money.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if the product I want to buy is no more available in
+                    the market when I have reached my half payment mark?</h3>
+                <p>In the rare event that your item of choice is sold out or
+                    unavailable, we would offer you an option to pick a similar
+                    item within the same price range or grant you a refund.</p>
+            </div>
+        </section>
+
+        <section class="download" id="download">
+            <h2>Download <span>Hair Main Street</span> to own your dream hair
+                and enjoy
+                seamless & convenient shopping</h2>
+            <div class="download-buttons">
+                <button onclick="goToAppStore(`playstore`)">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 283">
+                        <path fill="#ea4335"
+                            d="M119.553 134.916L1.06 259.061a32.14 32.14 0 0 0 47.062 19.071l133.327-75.934z" />
+                        <path fill="#fbbc04"
+                            d="M239.37 113.814L181.715 80.79l-64.898 56.95l65.162 64.28l57.216-32.67a31.345 31.345 0 0 0 0-55.537z" />
+                        <path fill="#4285f4"
+                            d="M1.06 23.487A30.6 30.6 0 0 0 0 31.61v219.327a32.3 32.3 0 0 0 1.06 8.124l122.555-120.966z" />
+                        <path fill="#34a853"
+                            d="m120.436 141.274l61.278-60.483L48.564 4.503A32.85 32.85 0 0 0 32.051 0C17.644-.028 4.978 9.534 1.06 23.399z" />
+                    </svg>
+                    <div class="text-container">
+                        <div class="download-on">Get it on</div>
+                        <div class="store">Google
+                            Play Store</div>
+                    </div>
+                </button>
+                <button onclick="goToAppStore(`appstore`)">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 256">
+                        <defs>
+                            <lineargradient id="logosAppleAppStore0" x1="50%"
+                                x2="50%" y1="0%" y2="100%">
+                                <stop offset="0%" stop-color="#17c9fb" />
+                                <stop offset="100%" stop-color="#1a74e8" />
+                            </lineargradient>
+                        </defs>
+                        <path fill="url(#logosAppleAppStore0)"
+                            d="M56.064 0h143.872C230.9 0 256 25.1 256 56.064v143.872C256 230.9 230.9 256 199.936 256H56.064C25.1 256 0 230.9 0 199.936V56.064C0 25.1 25.1 0 56.064 0" />
+                        <path fill="#fff"
+                            d="m82.042 185.81l.024.008l-8.753 15.16c-3.195 5.534-10.271 7.43-15.805 4.235s-7.43-10.271-4.235-15.805l6.448-11.168l.619-1.072c1.105-1.588 3.832-4.33 9.287-3.814c0 0 12.837 1.393 13.766 8.065c0 0 .126 2.195-1.351 4.391m124.143-38.72h-27.294c-1.859-.125-2.67-.789-2.99-1.175l-.02-.035l-29.217-50.606l-.038.025l-1.752-2.512c-2.872-4.392-7.432 6.84-7.432 6.84c-5.445 12.516.773 26.745 2.94 31.046l40.582 70.29c3.194 5.533 10.27 7.43 15.805 4.234c5.533-3.195 7.43-10.271 4.234-15.805l-10.147-17.576c-.197-.426-.539-1.582 1.542-1.587h13.787c6.39 0 11.57-5.18 11.57-11.57s-5.18-11.57-11.57-11.57m-53.014 15.728s1.457 7.411-4.18 7.411H48.092c-6.39 0-11.57-5.18-11.57-11.57s5.18-11.57 11.57-11.57h25.94c4.188-.242 5.18-2.66 5.18-2.66l.024.012l33.86-58.648l-.01-.002c.617-1.133.103-2.204.014-2.373l-11.183-19.369c-3.195-5.533-1.299-12.61 4.235-15.804s12.61-1.3 15.805 4.234l5.186 8.983l5.177-8.967c3.195-5.533 10.271-7.43 15.805-4.234s7.43 10.27 4.235 15.804l-47.118 81.61c-.206.497-.269 1.277 1.264 1.414h28.164l.006.275s16.278.253 18.495 15.454" />
+                    </svg>
+                    <div class="text-container">
+                        <div class="download-on">Get it on</div>
+                        <div class="store">Apple
+                            App Store</div>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-links">
+                <div class="company">
+                    <h3>COMPANY</h3>
+                    <ul>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="business">
+                    <h3>BUSINESS</h3>
+                    <ul>
+                        <li><a href="#faq">Help & F.A.Q</a></li>
+                    </ul>
+                </div>
+                <div class="socials">
+                    <h3>SOCIALS</h3>
+                    <ul>
+                        <li><a href="#twitter">X</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#tiktok">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <p>Get in touch: hairmainstreetofficial01@gmail.com</p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
