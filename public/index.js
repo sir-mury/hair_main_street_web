@@ -97,3 +97,31 @@ function goToDownload () {
     console.error('Download section not found.')
   }
 }
+
+function redirectToAppStore () {
+  if (device.ios()) {
+    if (window.location.href.includes('#')) {
+      const hashedIndex = window.location.href.indexOf('#')
+      const strippedPath = window.location.href.slice(0, hashedIndex)
+      window.location.href = strippedPath + 'appstore.html'
+    } else {
+      window.location.href = window.location.href + 'appstore.html'
+    }
+  } else if (device.android()) {
+    if (window.location.href.includes('#')) {
+      const hashedIndex = window.location.href.indexOf('#')
+      const strippedPath = window.location.href.slice(0, hashedIndex)
+      window.location.href = strippedPath + 'appstore.html'
+    } else {
+      window.location.href = window.location.href + 'appstore.html'
+    }
+  } else {
+    if (window.location.href.includes('#')) {
+      const hashedIndex = window.location.href.indexOf('#')
+      const strippedPath = window.location.href.slice(0, hashedIndex)
+      window.location.href = strippedPath + 'no_apps.html'
+    } else {
+      window.location.href = window.location.href + 'no_apps.html'
+    }
+  }
+}

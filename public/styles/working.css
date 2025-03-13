@@ -81,6 +81,12 @@
     padding-bottom: 1rem;
     background-color: #f0ecf9;
   }
+
+  .section-404 svg{
+    fill: #673ab7;
+    height: 20rem;
+    width: 20rem;
+  }
   
   .text-404 {
     padding-top: 2rem;
@@ -137,6 +143,12 @@
 
     .text-1{
       font-size: 30px;
+    }
+
+    .section-404 svg{
+      fill: #673ab7;
+      height: 40%;
+      width: 40%;
     }
 
     .text-2{
