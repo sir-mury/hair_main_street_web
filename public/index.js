@@ -88,3 +88,12 @@ function goToAppStore (path) {
     }
   }
 }
+
+function goToDownload () {
+  const downloadSection = document.getElementById('download')
+  if (downloadSection) {
+    downloadSection.scrollIntoView({ behavior: 'smooth' })
+  } else {
+    console.error('Download section not found.')
+  }
+}

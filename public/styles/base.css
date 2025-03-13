@@ -23,7 +23,7 @@ header .logo {
 
 header .logo img {
   object-fit: contain;
-  padding: auto;
+  padding: 0;
   align-content: stretch;
   height: 3.75rem; /* 60px */
   width: 7.8125rem; /* 125px */
@@ -61,7 +61,7 @@ header .download-link {
   padding-top: 0.5rem;
   padding-right: 4rem;
   padding-left: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   background-color: #fff;
 }
 
@@ -87,6 +87,7 @@ header .download-link {
   font-weight: 400;
   font-size: 1.4375rem; /* 23px */
   line-height: 2.25rem; /* 36px */
+  margin-bottom: 0.5rem;
 }
 
 .hero button {
@@ -95,7 +96,7 @@ header .download-link {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.9375rem; /* 15px */
-  margin-top: 1.875rem; /* 30px */
+  margin-top: 1rem; /* 30px */
   height: 4.4375rem; /* 71px */
   width: 17.75rem; /* 284px */
   font-family: 'Lato', 'San-serif';
@@ -546,8 +547,12 @@ footer .contact {
 
 @media (max-width: 768px) {
   header {
-    padding: 1rem;
+    padding-left: 0;
     flex-direction: row;
+  }
+
+  header .logo{
+    padding-left: 1rem;
   }
 
   .hero {
@@ -560,13 +565,17 @@ footer .contact {
     line-height: 2.75rem;
   }
 
+  .hero p{
+    margin-bottom: 0.1rem;
+  }
+
   .hero button {
     background-color: #6a1b9a;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.9375rem; /* 15px */
-    margin-top: 1.25rem; /* 30px */
+    margin-top: 0.2rem; /* 30px */
     margin-bottom: 1.25rem;
     height: 3rem; /* 71px */
     width: 17.75rem; /* 284px */

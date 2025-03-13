@@ -129,3 +129,25 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media (max-width: 768px) {
+    .working-header{
+      padding-left: 1rem;
+    }
+
+    .text-1{
+      font-size: 30px;
+    }
+
+    .text-2{
+      font-size: 25px;
+    }
+
+    .not{
+      font-size: 45px;
+    }
+
+    .sorry{
+      font-size: 24px;
+    }
+  }
